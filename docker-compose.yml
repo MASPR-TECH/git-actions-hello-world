@@ -1,6 +1,7 @@
 version: "2"
 services:
-app:
-image: ECR_REGISTRY/github-actions kill: GITHUB_SHA
-ports:
-"80:5000"
+  app:
+    image: ECR_REGISTRY/github-actions:${GITHUB_SHA}
+    ports:
+      - "80:5000"
+
