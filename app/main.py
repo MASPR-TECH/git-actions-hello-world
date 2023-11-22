@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return 'Hello, this is your Flask app!'
+    return 'Hello, this is CI/CD using Github Actions'
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
